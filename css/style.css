@@ -42,7 +42,7 @@ body {
 }
 
 .container .box::before {
-    content: 'Phone';
+    /* content: 'Phone'; */
     position: absolute;
     top: 20px;
     left: 20px;
@@ -53,7 +53,7 @@ body {
     opacity: 0;
 }
 .container .box::after  {
-    content: 'Cell';
+    /* content: 'Cell'; */
     position: absolute;
     top: 20px;
     right: 20px;
@@ -98,7 +98,7 @@ body {
     padding: 10px, 25px;
     border-radius: 30px;
     text-decoration: none;
-    transition: 0;
+    transition: 0.5s;
     opacity: 0;
     z-index: 10;
 }
@@ -106,4 +106,63 @@ body {
 .container .box:hover .buy{
     bottom: 30px;
     opacity: 1;
+}
+
+.container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    transform: translate3d(-50%,-50%,50px);
+}
+.container .box .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px) rotate(15deg);
+}
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy {
+    background: purple;
+}
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy {
+    background: #06d85f;
+}
+
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(3) .buy {
+    background: rgb(230, 204, 204);
+}
+.container .box:nth-child(4) .circle,
+.container .box:nth-child(4) .buy {
+    background: rgb(110, 130, 185);
+}
+.container .box:nth-child(5) .circle,
+.container .box:nth-child(5) .buy {
+    background: #06b8d8;
+}
+.container .box:nth-child(6) .circle,
+.container .box:nth-child(6) .buy {
+    background: #290744;
+}
+
+.huawei {
+    width: 150px;
+    /* background: red; */
+    transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+}
+.p20 {
+    width: 110px;
 }
