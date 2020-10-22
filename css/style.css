@@ -337,7 +337,7 @@ input[type="text"] {
     width: 400px;
     margin: 0 0 20px;
     padding: 8px 12px 10px 12px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid #4286f4;
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -347,7 +347,7 @@ textarea {
     height: 150px;
     margin: 0 0 20px;
     padding: 8px 12px 10px 12px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid #4286f4;
     background: rgba(0, 0, 0, 0.25);
 }
 
@@ -357,6 +357,79 @@ input[type="submit"] {
     margin: 0 0 20px;
     padding: 8px 0 10px 0;
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid #4286f4;
     background: rgba(0, 0, 0, 0.25);
+}
+
+
+/* ======my ovelay pop up celphone details */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 90%;
+    }
+}
+
+.spec_list {
+    /* list-style: none; */
+    color: blue;
+    font-size: 20px;
+    list-style: none;
+    
+}
+
+.popdiv {
+    margin: 50px;
+    padding: 40px;
+
 }
