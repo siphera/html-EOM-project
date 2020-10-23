@@ -126,9 +126,6 @@ body {
     width: 110px;
 }
 
-
-
-
 /* my overlay nav section */
 .menu-btn {
     position: fixed;
@@ -224,9 +221,9 @@ body {
     transform: translate3d(0, 0, 0);
 }
 
-.menu .nav-item.current>a {
+/* .menu .nav-item.current>a {
     color: #4286f4;
-}
+} */
 
 .menu .nav-link {
     display: inline-block;
@@ -323,7 +320,7 @@ textarea {
 
 form {
     width: 400px;
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
 input[type="text"] {
@@ -356,7 +353,7 @@ input[type="submit"] {
 }
 
 
-/* ======my ovelay pop up celphone details */
+/* ======my ovelay pop up cellphone details */
 
 .overlay {
     position: fixed;
@@ -379,11 +376,10 @@ input[type="submit"] {
 .popup {
     display: flex;
     flex-wrap: wrap;
-    margin: 70px auto;
+    margin: 70px;
     padding: 20px;
     background: rgb(173, 170, 170);
     border-radius: 5px;
-    width: 60%;
     position: relative;
     transition: all 1s ease-in-out;
 }
@@ -400,38 +396,40 @@ input[type="submit"] {
 }
 
 .popup .close:hover {
-    color: #06D85F;
+    color: #4286f4;
 }
 
 .popup .content {
     max-height: 30%;
-    overflow: auto;
+    overflow: scroll;
+}
+
+.spec_list {
+    list-style: square;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.popdiv {
+    margin: 10px 10px;
+}
+
+h1,
+h2 {
+    color: rgb(70, 57, 57);
+    text-align: center;
 }
 
 @media screen and (max-width: 700px) {
     .popup {
-        width: 90%;
+        width: 100%;
+        position: relative;
         height: auto;
-        padding: 10px;
-        margin: 0px;
+        margin: 70px 0px;
     }
-}
-
-.spec_list {
-    /* list-style: none; */
-    color: blue;
-    font-size: 20px;
-    list-style: none;
-    
-}
-
-.popdiv {
-    margin: 50px;
-    padding: 40px;
-
-}
-
-h1 {
-    color: white;
-    text-align: center;
+    .popup .close {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
 }
