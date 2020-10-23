@@ -445,5 +445,6 @@ p {
     }
     form {
         width: 91%;
+        margin: 30px auto;
     }
 }
