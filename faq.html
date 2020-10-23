@@ -42,8 +42,56 @@
         </nav>
     </header>
 
-    <h1>this is the FAQ section</h1>
+    
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <button class="accordion">Do you sell phones or tablets?</button>
+        <div class="panel">
+            <p>NO. SALMAN Tech Store has as its primary task to provide detailed and accurate information about mobile phones and their features.</p>
+        </div>
+
+        <button class="accordion">Can I send you my phone for repairs or upgrades?</button>
+        <div class="panel">
+            <p>No, we do not upgrade or repair phones/tablets. We merely provide information about mobile phones.</p>
+        </div>
+
+        <button class="accordion">I am sure that the information in your catalog for a particular device is not correct. Why is that so?</button>
+        <div class="panel">
+            <p>We gather our information mainly from the web sites of manufacturers. Some of them provide very detailed information, others not so much. In the latter case, we sometimes have to resort to other sources which are not as reliable. These include other catalogs, message boards and online stores. If you think that there is incorrect data in the catalog for your phone, please send us an email with the correct data, as well as where you found it, if possible. We thank you in advance.</p>
+        </div>
+
+        <button class="accordion">I like phone X very much. Where can I buy it?</button>
+        <div class="panel">
+            <p>NO. SALMAN Tech Store has as its primary task to provide detailed and accurate information about mobile phones and their features.</p>
+        </div>
+
+        <button class="accordion">Can I send you my phone for repairs or upgrades?</button>
+        <div class="panel">
+            <p>No, we do not upgrade or repair phones/tablets. We merely provide information about mobile phones.</p>
+        </div>
+
+        <button class="accordion">I am sure that the information in your catalog for a particular device is not correct. Why is that so?</button>
+        <div class="panel">
+            <p>We gather our information mainly from the web sites of manufacturers. Some of them provide very detailed information, others not so much. In the latter case, we sometimes have to resort to other sources which are not as reliable. These include other catalogs, message boards and online stores. If you think that there is incorrect data in the catalog for your phone, please send us an email with the correct data, as well as where you found it, if possible. We thank you in advance.</p>
+        </div>
+    </div>
 </body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
 <script src="js/script.js"></script>
 
 </html>
