@@ -290,6 +290,8 @@ body {
 }
 
 /* ====contact section====== */
+
+
 input,
 textarea {
     font-size: 100%;
@@ -431,5 +433,8 @@ h2 {
         position: absolute;
         top: 20px;
         left: 30px;
+    }
+    .contact-container {
+        margin: 70px 70xp;
     }
 }
