@@ -7,7 +7,9 @@
 body {
 
     min-height: 100vh;
-    background: #131313;
+    /* background: #302e2e; */
+    background: linear-gradient(#000000, #3b3f52);
+
 }
 
 .main-container {
@@ -333,7 +335,7 @@ input[type="text"] {
     display: block;
     width: 100%;
     margin: 0 0 20px;
-    padding: 8px 0px 10px 0px; 
+    padding: 8px 0px 10px 0px;
     border: 2px solid #4286f4;
     background: rgba(0, 0, 0, 0.25);
 }
@@ -421,12 +423,15 @@ input[type="submit"] {
 }
 
 h1,
-h2{
+h2 {
     color: rgb(248, 244, 244);
     text-align: center;
 }
+
 .form-p {
     color: rgb(248, 244, 244);
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* ======my FAQ page section */
@@ -450,19 +455,45 @@ h2{
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-  }
+}
 
-  
-  .active, .accordion:hover {
-    background-color: #ccc; 
-  }
-  
-  .panel {
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
     padding: 40px;
     display: none;
     background-color: white;
     overflow: hidden;
-  }
+}
+
+.custom-shape-divider-bottom-1603704289 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1603704289 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-bottom-1603704289 .shape-fill {
+    fill: #596888;
+}
+
+.sec {
+
+}
 
 @media screen and (max-width: 700px) {
     .popup {
@@ -471,19 +502,23 @@ h2{
         height: auto;
         margin: 70px 0px;
     }
+
     .popup .close {
         position: absolute;
         top: 20px;
         left: 30px;
     }
+
     .contact-container {
         margin: 70px 5px;
         /* border: 2px white solid; */
     }
+
     form {
         width: 91%;
         margin: 30px auto;
     }
+
     .faq-container {
         margin: 70px 10px;
     }
