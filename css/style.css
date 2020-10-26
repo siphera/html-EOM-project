@@ -483,6 +483,11 @@ h2 {
     align-items: center;
     padding: 100px;
 }
+.new-sec {
+    min-height: 100vh;
+    position: relative;
+}
+
 
 .custom-shape-divider-bottom-1603708341 {
     position: absolute;
@@ -582,4 +587,12 @@ h2 {
     .faq-container {
         margin: 70px 10px;
     }
+    .phone {
+        /* position: absolute; */
+        width: 100%;
+        /* bottom: 50px; */
+        /* height: 60%; */
+        /* right: 100px; */
+    }
 }
+
