@@ -570,6 +570,10 @@ h2 {
     .home-content h2 {
         font-size: 3em;
     }
+    .home-content p {
+        color: #72d3d3;
+        margin: 10px 0 20px;
+    }
 }
 @media screen and (max-width: 700px) {
     .popup {
