@@ -61,6 +61,7 @@ body {
     text-decoration: none;
 }
 
+
 .container .box .circle {
     position: absolute;
     top: 50%;
@@ -112,6 +113,11 @@ body {
 .container .box:nth-child(6) .circle,
 .container .box:nth-child(6) .buy {
     background: #290744;
+}
+
+.container .box .buy:hover {
+    color: rgb(27, 26, 26);
+    background: rgb(222, 220, 230);
 }
 
 .product6,
@@ -532,12 +538,17 @@ h2 {
 }
 
 .home-content a {
-    padding: 10px 30px;
-    background: #FFFFFF;;
-    display: inline-block;
+    position: absolute;
+    color: #fff;
+    background: rgb(69, 28, 182);
+    padding: 10px 25px;
+    border-radius: 30px;
     text-decoration: none;
-    color: black;
 
+}
+.home-content a:hover {
+    color: rgb(27, 26, 26);
+    background: rgb(222, 220, 230);
 } 
 
 .phone {
