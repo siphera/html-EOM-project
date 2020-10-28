@@ -135,6 +135,10 @@ body {
     width: 110px;
 }
 
+.prod-p20 {
+    width: 200px;
+}
+
 /* my overlay nav section */
 .menu-btn {
     position: fixed;
@@ -371,7 +375,7 @@ input[type="submit"] {
 /* ======my ovelay pop up cellphone details */
 
 .overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
